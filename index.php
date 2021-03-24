@@ -15,8 +15,6 @@
 		<a href="#">Q10 - Look at the portion above.</a><br><br>
 
 		<a href="Q11.html">Q11a and Q11b - Click here!</a><br><br>
-
-		<a href="Q12a.html">Q12 - Click here!</a><br><br>
 	</div>
 </body>
 </html>
