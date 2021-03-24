@@ -22,7 +22,7 @@ $name = $_POST['name'];
 $year1 = $_POST['year1'];
 $year2 = $_POST['year2'];
 
-$sql = "SELECT * AS S1 FROM ptelect WHERE candidate LIKE '$name%' OR candidate LIKE '%$name' OR candidate LIKE '%$name%' AND year BETWEEN $year1 AND $year2";
+$sql = "SELECT * FROM ptelect WHERE candidate LIKE '$name%' OR candidate LIKE '%$name' OR candidate LIKE '%$name%' AND year BETWEEN $year1 AND $year2";
 $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
 echo "<table border='1'>
