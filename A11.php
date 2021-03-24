@@ -30,8 +30,8 @@ echo "<table border='1'>
 <th style='padding:15px;'>Candidate Name</th>
 <th style='padding:15px;'>Year</th>
 <th style='padding:15px;'>Party</th>
-th style='padding:15px;'>State</th>
-th style='padding:15px;'>Votes</th>
+<th style='padding:15px;'>State</th>
+<th style='padding:15px;'>Votes</th>
 </tr>";
 
 while ($row = mysqli_fetch_array($result))
