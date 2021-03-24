@@ -56,10 +56,6 @@ echo "Q11.b<br>";
 
 $row2 = mysqli_fetch_array($result2);
 echo "Total of the votes received = " . $row2['S1'];
-/*while ($row2 = mysqli_fetch_array($result2))
-{
-  echo "Total of the votes received = " . $row2['S1'];
-}*/
 
 echo "<br><br>";
 
