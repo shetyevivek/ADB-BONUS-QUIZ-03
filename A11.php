@@ -22,6 +22,8 @@ $name = $_POST['name'];
 $year1 = $_POST['year1'];
 $year2 = $_POST['year2'];
 
+echo "Q11.a<br>";
+
 $sql1 = "SELECT * FROM ptelect WHERE candidate LIKE '$name%' OR candidate LIKE '%$name' OR candidate LIKE '%$name%' AND year BETWEEN $year1 AND $year2";
 $result1 = mysqli_query($con, $sql1) or die('Error ' . mysqli_error($con));
 
@@ -49,6 +51,8 @@ while ($row = mysqli_fetch_array($result1))
 }
 echo "</table>";
 echo "<br><br>";
+
+echo "Q11.b<br>";
 
 while ($row2 = mysqli_fetch_array($result2))
 {
