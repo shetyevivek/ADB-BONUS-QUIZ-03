@@ -22,8 +22,11 @@ $name = $_POST['name'];
 $year1 = $_POST['year1'];
 $year2 = $_POST['year2'];
 
-$sql = "SELECT * FROM ptelect WHERE candidate LIKE '$name%' OR candidate LIKE '%$name' OR candidate LIKE '%$name%' AND year BETWEEN $year1 AND $year2";
-$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
+$sql1 = "SELECT * FROM ptelect WHERE candidate LIKE '$name%' OR candidate LIKE '%$name' OR candidate LIKE '%$name%' AND year BETWEEN $year1 AND $year2";
+$result1 = mysqli_query($con, $sql1) or die('Error ' . mysqli_error($con));
+
+$sql2 = "SELECT SUM(candidatevotes) AS S1 FROM ptelect WHERE candidate LIKE '$name%' OR candidate LIKE '%$name' OR candidate LIKE '%$name%' AND year BETWEEN $year1 AND $year2";
+$result2 = mysqli_query($con, $sql2) or die('Error ' . mysqli_error($con));
 
 echo "<table border='1'>
 <tr>
@@ -34,7 +37,7 @@ echo "<table border='1'>
 <th style='padding:15px;'>Votes</th>
 </tr>";
 
-while ($row = mysqli_fetch_array($result))
+while ($row = mysqli_fetch_array($result1))
 {
   echo "<tr>";
   echo "<td style='padding:15px;'>" . $row['candidate'] . "</td>";
@@ -47,7 +50,10 @@ while ($row = mysqli_fetch_array($result))
 echo "</table>";
 echo "<br><br>";
 
-echo "Total of the votes received = " . $row['S1'];
+while ($row2 = mysqli_fetch_array($result2))
+{
+  echo "Total of the votes received = " . $row['S1'];
+}
 
 echo "<br><br>";
 
