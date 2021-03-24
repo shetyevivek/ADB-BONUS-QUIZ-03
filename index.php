@@ -12,7 +12,7 @@
 	</div>
 
 	<div>
-		<a href="Q10.html">Q10 - Click here!</a><br><br>
+		<a href="#">Q10 - Look at the portion above.</a><br><br>
 
 		<a href="Q11.html">Q11 - Click here!</a><br><br>
 
