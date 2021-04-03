@@ -1,20 +1,33 @@
 <?php
+
+if($_POST)
+{
+	$name = $_POST['name'];
+	$comment = $_POST['comment'];
+	$handle = fopen("comments.php", "a");
+	fwrite($handle, "<b><i>" .$name. "</i></b>:<br>" .$comment. "<br><br>");
+	fclose($handle);
+}
+
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bonus Quiz 03</title>
+	<title>Comments Test</title>
+	<meta charset="utf-8">
 </head>
 <body>
-	<div>
-		<h2>Student ID: 1001821620<br>Name: Vivek Vishwanath Shetye</h2><br><br><br>
-	</div>
-
-	<div>
-		<a href="#">Q10 - Look at the portion above.</a><br><br>
-
-		<a href="Q11.html">Q11a and Q11b - Click here!</a><br><br>
-	</div>
+	<h1>Post a comment</h1>
+	<form action="" method="POST">
+		Name : <br><input type="text" name="name"><br>
+		Comment: <br><textarea rows="10" cols="30" name="comment"></textarea><br>
+		<input type="submit" name="Post comment">
+	</form>
+	<hr>
+	<h1>Other comments:</h1>
+	<?php
+	include "comments.php";
+	?>
 </body>
 </html>
