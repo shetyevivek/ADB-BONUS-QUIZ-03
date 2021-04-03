@@ -25,7 +25,7 @@ if($_POST)
 		<input type="submit" name="Post comment">
 	</form>
 	<hr>
-	<h1>Other comments:</h1>
+	<h1>Other comments:</h1><br>
 	<?php
 	include "comments.php";
 	?>
