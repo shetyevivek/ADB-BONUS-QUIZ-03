@@ -75,6 +75,10 @@
 				</div>
 			</div>
 		</aside>
+
+		<form action="" method="post">
+			<input type="submit" name="empty" value="Empty Cart">
+		</form>
 	</main>
 
 	<!-- JAVASCRIPT - DO NOT TOUCH -->
