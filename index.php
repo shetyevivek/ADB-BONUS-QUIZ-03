@@ -42,12 +42,12 @@
               <a href="#" class="nav-link scroll-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+              <a href="cart.php" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
             </li>
           </ul>
         </div>
 
-        <a href="cart.html" class="cart-icon">
+        <a href="cart.php" class="cart-icon">
           <i class="bx bx-shopping-bag"></i>
         </a>
 
@@ -61,12 +61,15 @@
     <img src="./images/banner.png" alt="" class="hero-img" />
 
     <div class="hero-content">
-      <h2><span class="discount">70% </span> SALE OFF</h2>
+      <h2><span class="discount">30% </span> SALE OFF</h2>
       <h1>
         <span>Summer Vibes</span>
         <span>mode on</span>
       </h1>
-      <a class="btn" href="#">shop now</a>
+      <a class="btn" href="#">Vegetables</a>
+      <a class="btn" href="#">Fruits</a>
+      <a class="btn" href="#">Dairy Products</a>
+      <a class="btn" href="#">Sea Food</a>
     </div>
   </header>
 
