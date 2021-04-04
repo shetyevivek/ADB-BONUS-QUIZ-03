@@ -58,12 +58,12 @@ if (isset($_POST['Submit']))
           <div class="main"> <img src="./Vegetables/Tomato.jpg" alt=""> </div>
         </div>
         <div class="right"> <span>Home/Vegetables</span>
-          <h1>Cherry Tomatoes - 5lb</h1>
-          <div class="price">$50</div>
+          <h1>Tomatoes - 5lb</h1>
+          <div class="price">$10</div>
           <form class="form" action="" method="post">
             <input type="submit" name="Submit" value="Add To Cart" class="addCart"> </form>
           <h3>Product Details:</h3>
-          <p>Cherry tomatoes are a small variety of the regular tomato and are normally less acidic making them sweeter than larger tomatoes. They are halved or used as complete in salads or as garnish. They are a good source of Vitamin A, C, K, Iron, Folate and Potassium. We source high quality cherry tomatoes and deliver it fresh at your door step.</p>
+          <p>Tomato is a supplement thick superfood that offers advantage to a scope of real systems.It has numerous little seeds. It is extremely scrumptious. It is likewise useful for wellbeing. Most tomatoes are red. They are a good source of Vitamin A, C, K, Iron, Folate and Potassium. They are used in salads, curries, soups and other dishes. We source best quality tomatoes and deliver it fresh at your door step.</p>
         </div>
       </div>
     </section>
