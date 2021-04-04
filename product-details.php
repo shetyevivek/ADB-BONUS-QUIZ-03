@@ -56,12 +56,12 @@ if (isset($_POST['Submit']))
             <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+            <a href="cart.php" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
           </li>
         </ul>
       </div>
 
-      <a href="cart.html" class="cart-icon">
+      <a href="cart.php" class="cart-icon">
         <i class="bx bx-shopping-bag"></i>
       </a>
 
