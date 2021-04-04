@@ -14,7 +14,7 @@
 
   <!-- Custom StyleSheet -->
   <link rel="stylesheet" href="./css/styles.css" />
-  <title>Codevo - Ecommerce Website</title>
+  <title>Grocery Shopping - Ecommerce Website</title>
 </head>
 
 <body>
