@@ -32,7 +32,7 @@
       while ($row = mysqli_fetch_array($result))
       {
         echo "<p><i>Hello World!</i><p>";
-        echo "<div class="basket-product"><div class="item"><div class="product-image">";
+        echo "<div class='basket-product'><div class='item'><div class='product-image'>";
         /*echo "<img src="$row['Image_Location']" alt="Placholder Image 2" class="product-frame"></div>";
         echo "<div class="product-details"><h1><strong><span class='"tem-quantity">1</span> x Cherry Tomatoes - 5lb</strong></h1></div>";
         echo "<div class="price">26.00</div><div class="quantity"><input type="number" value="$row['Quantity']" min="1" class="quantity-field"></div>";
