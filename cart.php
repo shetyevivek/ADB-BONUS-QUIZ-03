@@ -40,8 +40,8 @@
         echo "<img src='$image' alt='Placholder Image 2' class='product-frame'></div>";
         echo "<div class='product-details'><h1><strong><span class='item-quantity'>$quantity</span> x $name</strong></h1></div>";
         echo "<div class='price'>$price</div><div class='quantity'><input type='number' value='$quantity' min='1' class='quantity-field'></div>";
-        /*echo "<div class="subtotal">$row['Price']</div>";
-        echo "<div class="remove"><button>Remove</button></div>";*/
+        echo "<div class='subtotal'>$price</div>";
+        echo "<div class='remove'><button>Remove</button></div>";
       }
 
       ?>
