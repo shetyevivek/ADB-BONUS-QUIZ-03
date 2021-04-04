@@ -11,7 +11,7 @@
 
 <body>
 	<main>
-		<a href="index.php" class="nav-link">Home</a>
+		<a href="index.php" style="font-weight:20px;">Home</a>
 		<h2>Shopping Cart</h2>
 		<div class="basket">
 			<div class="basket-labels">
