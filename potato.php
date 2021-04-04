@@ -55,7 +55,7 @@ if (isset($_POST['Submit']))
     <section class="section product-detail">
       <div class="details container-md">
         <div class="left">
-          <div class="main"> <img src="./Vegetables/Tomato.jpg" alt=""> </div>
+          <div class="main"> <img src="./Vegetables/Potato.jpg" alt=""> </div>
         </div>
         <div class="right"> <span>Home/Vegetables</span>
           <h1>Potatoes - 5lb</h1>
