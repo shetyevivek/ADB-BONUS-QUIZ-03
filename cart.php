@@ -81,6 +81,17 @@
 		<input type="submit" name="empty" value="Empty Cart" style="margin-left:300px; background:#ff7c9c; color:#fff; cursor:pointer; border:0px; padding:10px;">
 	</form>
 
+	<?php
+	include_once "connection.php";
+
+	if(isset($_POST['empty']))
+	{
+		$sql = "TRUNCATE TABLE cart";
+		$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
+	}
+	
+	?>
+
 	<!-- JAVASCRIPT - DO NOT TOUCH -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script type="text/javascript">
