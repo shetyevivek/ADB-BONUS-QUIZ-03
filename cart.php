@@ -6,10 +6,48 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title>Basket</title>
 </head>
 
 <body>
+	<!-- Navigation -->
+    <nav class="nav">
+        <div class="navigation container">
+            <div class="logo">
+                <h1>Vegetables</h1>
+            </div>
+
+            <div class="menu">
+                <div class="top-nav">
+                    <div class="logo">
+                        <h1>Vegetables</h1>
+                    </div>
+                    <div class="close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="cart.html" class="cart-icon">
+                <i class="bx bx-shopping-bag"></i>
+            </a>
+
+            <div class="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </nav>
+
 	<main>
 		<h2>Shopping Cart</h2>
 		<div class="basket">
@@ -75,7 +113,7 @@
 			</div>
 		</aside>
 	</main>
-	
+
 	<!-- JAVASCRIPT - DO NOT TOUCH -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script type="text/javascript">
