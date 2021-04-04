@@ -64,11 +64,43 @@
 				<div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
 				<div class="summary-subtotal">
 					<div class="subtotal-title">Subtotal</div>
-					<div class="subtotal-value final-value" id="basket-subtotal">0.00</div>
+					<?php
+					include_once "connection.php";
+
+					$sql = "SELECT SUM(Price) AS Total FROM cart";
+					$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
+
+					$row = mysqli_fetch_array($result);
+
+					$totalprice = $row['Total'];
+
+					if($totalprice == NULL)
+					{
+						$totalprice = 0;
+					}
+
+					echo "<div class='subtotal-value final-value' id='basket-subtotal'>$totalprice</div>";
+					?>
 				</div>
 				<div class="summary-total">
 					<div class="total-title">Total</div>
-					<div class="total-value final-value" id="basket-total">0.00</div>
+					<?php
+					include_once "connection.php";
+
+					$sql = "SELECT SUM(Price) AS Total FROM cart";
+					$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
+
+					$row = mysqli_fetch_array($result);
+
+					$totalprice = $row['Total'];
+
+					if($totalprice == NULL)
+					{
+						$totalprice = 0;
+					}
+
+					echo "<div class='total-value final-value' id='basket-total'>$totalprice</div>";
+					?>
 				</div>
 				<div class="summary-checkout">
 					<button class="checkout-cta">Go to Secure Checkout</button>
