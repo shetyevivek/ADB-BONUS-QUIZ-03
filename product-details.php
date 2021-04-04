@@ -5,7 +5,7 @@ include_once 'connection.php';
 $sql = "INSERT INTO cart VALUES ('Cherry Tomatoes - 5lb', 50, './Vegetables/Tomato.jpg', 1)";
 $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
-alert("Cherry Tomatoes added to cart!");
+echo '<script>alert("Welcome to Geeks for Geeks")</script>';
 //header("location: cart.html");
 
 ?>
