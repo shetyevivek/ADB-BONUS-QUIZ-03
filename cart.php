@@ -120,6 +120,8 @@
 	{
 		$sql = "TRUNCATE TABLE cart";
 		$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
+
+		header("Location: cart.php");
 	}
 	
 	?>
