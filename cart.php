@@ -12,6 +12,9 @@
 <body>
 	<main>
 		<a href="index.php" style="font-size:20px; color:#000;">Home</a>
+		<form action="" method="post">
+		<input type="submit" name="empty" value="Empty Cart" style="margin-left:400px;">
+	</form>
 		<h2>Shopping Cart</h2>
 		<div class="basket">
 			<div class="basket-labels">
