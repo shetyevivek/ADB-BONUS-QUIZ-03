@@ -8,7 +8,7 @@ if (isset($_POST['Submit']))
 
   if(mysqli_affected_rows($con) > 0)
   {
-    echo '<script>alert("Welcome to Geeks for Geeks")</script>';
+    echo '<script>alert("Cherry Tomatoes - 5lb added to cart!")</script>';
   }
 }
 
