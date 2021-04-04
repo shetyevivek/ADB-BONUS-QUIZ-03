@@ -75,11 +75,11 @@
 				</div>
 			</div>
 		</aside>
-
-		<form action="" method="post">
-			<input type="submit" name="empty" value="Empty Cart">
-		</form>
 	</main>
+
+	<form action="" method="post">
+		<input type="submit" name="empty" value="Empty Cart" style="margin-left:200px;">
+	</form>
 
 	<!-- JAVASCRIPT - DO NOT TOUCH -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
