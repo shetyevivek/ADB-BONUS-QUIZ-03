@@ -1,13 +1,15 @@
 <?php
 include_once 'connection.php';
 
-// Retrieve the data
-$sql = "INSERT INTO cart VALUES ('Cherry Tomatoes - 5lb', 50, './Vegetables/Tomato.jpg', 1)";
-$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
-
-if(mysqli_affected_rows($con) > 0)
+if (isset($_POST['Submit']))
 {
-  echo '<script>alert("Welcome to Geeks for Geeks")</script>';
+  $sql = "INSERT INTO cart VALUES ('Cherry Tomatoes - 5lb', 50, './Vegetables/Tomato.jpg', 1)";
+  $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
+
+  if(mysqli_affected_rows($con) > 0)
+  {
+    echo '<script>alert("Welcome to Geeks for Geeks")</script>';
+  }
 }
 
 ?>
