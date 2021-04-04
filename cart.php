@@ -78,7 +78,7 @@
 	</main>
 
 	<form action="" method="post">
-		<input type="submit" name="empty" value="Empty Cart" style="width:100px; background:#ff7c9c; color:#fff; cursor:pointer; border:0px; padding:0.8rem 4rem;">
+		<input type="submit" name="empty" value="Empty Cart" style="background:#ff7c9c; color:#fff; cursor:pointer; border:0px; padding:5px;">
 	</form>
 
 	<!-- JAVASCRIPT - DO NOT TOUCH -->
