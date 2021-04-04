@@ -31,7 +31,7 @@
 
       while ($row = mysqli_fetch_array($result))
       {
-        <p>Hello World!>
+        echo "<p>Hello World!>";
         /*echo "<div class="basket-product"><div class="item"><div class="product-image">";
         echo "<img src="$row['Image_Location']" alt="Placholder Image 2" class="product-frame"></div>";
         echo "<div class="product-details"><h1><strong><span class='"tem-quantity">1</span> x Cherry Tomatoes - 5lb</strong></h1></div>";
