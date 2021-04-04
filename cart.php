@@ -34,12 +34,13 @@
         $name = $row['Name'];
         $image = $row['Image_Location'];
         $quantity = $row['Quantity'];
+        $price = $row['price'];
 
         echo "<div class='basket-product'><div class='item'><div class='product-image'>";
         echo "<img src='$image' alt='Placholder Image 2' class='product-frame'></div>";
         echo "<div class='product-details'><h1><strong><span class='item-quantity'>$quantity</span> x $name</strong></h1></div>";
-        /*echo "<div class="price">26.00</div><div class="quantity"><input type="number" value="$row['Quantity']" min="1" class="quantity-field"></div>";
-        echo "<div class="subtotal">$row['Price']</div>";
+        echo "<div class='price'>$price</div><div class='quantity'><input type='number' value='$quantity' min='1' class='quantity-field'></div>";
+        /*echo "<div class="subtotal">$row['Price']</div>";
         echo "<div class="remove"><button>Remove</button></div>";*/
       }
 
