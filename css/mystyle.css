@@ -243,6 +243,7 @@ aside {
 }
 
 .summary {
+  margin-top: 100px;
   background-color: #eee;
   border: 1px solid #aaa;
   padding: 1rem;
