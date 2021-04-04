@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Basket</title>
 </head>
 
@@ -36,24 +36,34 @@
         $quantity = $row['Quantity'];
         $price = $row['price'];
 
-        echo "<div class='basket-product'><div class='item'><div class='product-image'>";
-        echo "<img src='$image' alt='Placholder Image 2' class='product-frame'></div>";
-        echo "<div class='product-details'><h1><strong><span class='item-quantity'>$quantity</span> x $name</strong></h1></div>";
-        echo "<div class='price'>$price</div><div class='quantity'><input type='number' value='$quantity' min='1' class='quantity-field'></div>";
+        echo "<div class='basket-product'>";
+        echo "<div class='item'>";
+        echo "<div class='product-image'>";
+        echo "<img src='$image' class='product-frame'>";
+        echo "</div>";
+        echo "<div class='product-details'>";
+        echo "<h1><strong><span class='item-quantity'>$quantity</span> x $name</strong></h1>";
+        echo "</div>";
+        echo "</div>";
+        echo "<div class='price'>$price</div>";
+        echo "<div class='quantity'>";
+        echo "<input type='number' value='$quantity' min='1' class='quantity-field'>";
+        echo "</div>";
         echo "<div class='subtotal'>$price</div>";
-        echo "<div class='remove'><button>Remove</button></div>";
+        echo "<div class='remove'>";
+        echo "<button>Remove</button>";
+        echo "</div>";
+        echo "</div>";
       }
-
       ?>
 
-      <!--
-      <div class="basket-product">
+      <!--<div class="basket-product">
         <div class="item">
           <div class="product-image">
             <img src="http://placehold.it/120x166" alt="Placholder Image 2" class="product-frame">
           </div>
           <div class="product-details">
-            <h1><strong><span class="item-quantity">1</span> x Eliza J Lace Sleeve Cuff Dress</strong></h1>
+            <h1><strong><span class="item-quantity">4</span> x Eliza J</strong> Lace Sleeve Cuff Dress</h1>
           </div>
         </div>
         <div class="price">26.00</div>
@@ -86,7 +96,7 @@
       </div>-->
     </div>
 
-    <!--<aside>
+    <aside>
       <div class="summary">
         <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
         <div class="summary-subtotal">
@@ -102,7 +112,7 @@
           <button class="checkout-cta">Go to Secure Checkout</button>
         </div>
       </div>
-    </aside>-->
+    </aside>
   </main>
 
 
