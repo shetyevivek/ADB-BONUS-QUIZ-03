@@ -34,7 +34,7 @@
         $name = $row['Name'];
         $image = $row['Image_Location'];
         $quantity = $row['Quantity'];
-        $price = $row['price'];
+        $price = $row['Price'];
 
         echo "<div class='basket-product'>";
         echo "<div class='item'>";
