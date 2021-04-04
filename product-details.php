@@ -5,7 +5,7 @@ include_once 'connection.php';
 $sql = "INSERT INTO cart VALUES ('Cherry Tomatoes - 5lb', 50, './Vegetables/Tomato.jpg', 1)";
 $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
-if(mysqli_affected_rows($con))
+if(mysqli_affected_rows($con) > 0)
 {
   alert("Cherry Tomatoes added to cart!");
   header("location: cart.html");
@@ -83,7 +83,7 @@ if(mysqli_affected_rows($con))
         <h1>Cherry Tomatoes - 5lb</h1>
         <div class="price">$50</div>
 
-        <form class="form" action="" method="POST">
+        <form class="form" action="" method="post">
           <input type="submit" name="Submit" value="Add To Cart" class="addCart">
         </form>
         <h3>Product Details:</h3>
