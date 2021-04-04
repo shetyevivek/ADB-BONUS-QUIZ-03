@@ -11,7 +11,7 @@
 
 <body>
 	<main>
-		<a href="index.php">Home</a>
+		<a href="index.php" class="nav-link">Home</a>
 		<h2>Shopping Cart</h2>
 		<div class="basket">
 			<div class="basket-labels">
