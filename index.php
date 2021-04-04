@@ -66,10 +66,10 @@
         <span>Summer Vibes</span>
         <span>mode on</span>
       </h1>
-      <a class="btn" href="vegetables.php">Vegetables</a>
-      <a class="btn" href="#">Fruits</a>
-      <a class="btn" href="#">Dairy Products</a>
-      <a class="btn" href="#">Sea Food</a>
+      <a class="btn" href="vegetables.html">Vegetables</a>
+      <a class="btn" href="fruits.html">Fruits</a>
+      <a class="btn" href="dairy.html">Dairy Products</a>
+      <a class="btn" href="seafood.html">Sea Food</a>
     </div>
   </header>
 
