@@ -64,11 +64,11 @@
 				<div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
 				<div class="summary-subtotal">
 					<div class="subtotal-title">Subtotal</div>
-					<div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+					<div class="subtotal-value final-value" id="basket-subtotal">0.00</div>
 				</div>
 				<div class="summary-total">
 					<div class="total-title">Total</div>
-					<div class="total-value final-value" id="basket-total">130.00</div>
+					<div class="total-value final-value" id="basket-total">0.00</div>
 				</div>
 				<div class="summary-checkout">
 					<button class="checkout-cta">Go to Secure Checkout</button>
