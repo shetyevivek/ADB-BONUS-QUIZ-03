@@ -3,7 +3,7 @@ include_once 'connection.php';
 
 if (isset($_POST['Submit']))
 {
-  $sql = "INSERT INTO cart VALUES ('Cherry Tomatoes - 5lb', 50, './Vegetables/Tomato.jpg', 1)";
+  $sql = "INSERT INTO cart VALUES ('Tomatoes - 5lb', 10, './Vegetables/Tomato.jpg', 1)";
   $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
   if(mysqli_affected_rows($con) > 0)
