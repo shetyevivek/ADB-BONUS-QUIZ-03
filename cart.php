@@ -86,7 +86,7 @@
       </div>-->
     </div>
 
-    <aside>
+    <!--<aside>
       <div class="summary">
         <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
         <div class="summary-subtotal">
@@ -102,7 +102,7 @@
           <button class="checkout-cta">Go to Secure Checkout</button>
         </div>
       </div>
-    </aside>
+    </aside>-->
   </main>
 
 
