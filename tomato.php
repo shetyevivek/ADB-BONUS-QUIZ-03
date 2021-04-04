@@ -59,7 +59,7 @@ if (isset($_POST['Submit']))
         </div>
         <div class="right"> <span>Home/Vegetables</span>
           <h1>Tomatoes - 5lb</h1>
-          <div class="price">$10</div>
+          <div class="price">$10.00</div>
           <form class="form" action="" method="post">
             <input type="submit" name="Submit" value="Add To Cart" class="addCart"> </form>
           <h3>Product Details:</h3>
