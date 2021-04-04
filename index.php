@@ -24,13 +24,13 @@
     <nav class="nav">
       <div class="navigation container">
         <div class="logo">
-          <h1>Codevo</h1>
+          <h1>Grocery Shopping</h1>
         </div>
 
         <div class="menu">
           <div class="top-nav">
             <div class="logo">
-              <h1>Codevo</h1>
+              <h1>Grocery Shopping</h1>
             </div>
             <div class="close">
               <i class="bx bx-x"></i>
@@ -39,10 +39,7 @@
 
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#home" class="nav-link scroll-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="product.html" class="nav-link">Products</a>
+              <a href="#" class="nav-link scroll-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
