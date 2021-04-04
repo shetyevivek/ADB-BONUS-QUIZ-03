@@ -61,7 +61,7 @@
     <img src="./images/banner.png" alt="" class="hero-img" />
 
     <div class="hero-content">
-      <h2><span class="discount">10% </span> SALE OFF</h2>
+      <h2><span class="discount">10% </span> OFF SALE</h2>
       <h1>
         <span>Summer Vibes</span>
         <span>mode on</span>
