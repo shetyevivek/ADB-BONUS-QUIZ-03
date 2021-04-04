@@ -39,7 +39,7 @@
 
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#" class="nav-link scroll-link">Home</a>
+              <a href="index.php" class="nav-link scroll-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="cart.php" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
