@@ -1,7 +1,3 @@
-<?php
-include_once 'connection.php';
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -28,18 +24,19 @@ include_once 'connection.php';
       </div>
 
       <?php
+      include_once "connection.php";
 
       $sql = "SELECT * FROM cart";
       $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
       while ($row = mysqli_fetch_array($result))
       {
-        echo "<div class='basket-product'><div class='item'><div class='product-image'>";
-        echo "<img src='$row['Image_Location']' alt='Placholder Image 2' class='product-frame'></div>";
-        echo "<div class='product-details'><h1><strong><span class='item-quantity'>1</span> x Cherry Tomatoes - 5lb</strong></h1></div>";
-        echo "<div class='price'>26.00</div><div class='quantity'><input type='number' value='$row['Quantity']' min='1' class='quantity-field'></div>";
-        echo "<div class='subtotal'>$row['Price']</div>";
-        echo "<div class='remove'><button>Remove</button></div>";
+        echo "<div class="basket-product"><div class="item"><div class="product-image">";
+        echo "<img src="$row['Image_Location']" alt="Placholder Image 2" class="product-frame"></div>";
+        echo "<div class="product-details"><h1><strong><span class='"tem-quantity">1</span> x Cherry Tomatoes - 5lb</strong></h1></div>";
+        echo "<div class="price">26.00</div><div class="quantity"><input type="number" value="$row['Quantity']" min="1" class="quantity-field"></div>";
+        echo "<div class="subtotal">$row['Price']</div>";
+        echo "<div class="remove"><button>Remove</button></div>";
       }
 
       ?>
