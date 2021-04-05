@@ -90,7 +90,6 @@ if (isset($_POST['Submit']))
 
     <?php
     include "comments.php";
-    header("Location: tomato.php");
     ?>
 
     <!-- GSAP -->
