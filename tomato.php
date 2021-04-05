@@ -66,7 +66,33 @@ if (isset($_POST['Submit']))
           <p>Tomato is a supplement thick superfood that offers advantage to a scope of real systems.It has numerous little seeds. It is extremely scrumptious. It is likewise useful for wellbeing. Most tomatoes are red. They are a good source of Vitamin A, C, K, Iron, Folate and Potassium. They are used in salads, curries, soups and other dishes. We source best quality tomatoes and deliver it fresh at your door step.</p>
         </div>
       </div>
-    </section>
+    </section><br><br>
+
+    <?php
+    if(isset($_POST['postc']))
+    {
+      $name = $_POST['name'];
+      $comment = $_POST['comment'];
+      $handle = fopen("comments.php", "a");
+      fwrite($handle, "<b><i>" .$name. "</i></b>:<br>" .$comment. "<br><br>");
+      fclose($handle);
+    }
+    ?>
+
+    <h1>Post a comment</h1>
+    <form action="" method="POST">
+      Name : <br><input type="text" name="name"><br>
+      Comment: <br><textarea rows="10" cols="30" name="comment"></textarea><br>
+      <input type="submit" name="postc" value="Post Comment">
+    </form>
+    <hr>
+    <h1>Other comments:</h1>
+
+    <?php
+    include "comments.php";
+    header("Location: tomato.php");
+    ?>
+
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <!-- Custom Script -->

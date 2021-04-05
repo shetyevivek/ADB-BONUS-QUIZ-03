@@ -69,7 +69,7 @@
       <a class="btn" href="vegetables.html">Vegetables</a>
       <a class="btn" href="fruits.html">Fruits</a>
       <a class="btn" href="dairy.html">Dairy Products</a>
-      <a class="btn" href="seafood.html">Sea Food</a>
+      <a class="btn" href="condiments.html">Condiments</a>
     </div>
   </header>
 
