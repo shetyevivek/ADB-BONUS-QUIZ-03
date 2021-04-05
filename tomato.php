@@ -73,7 +73,7 @@ if (isset($_POST['Submit']))
     {
       $name = $_POST['name'];
       $comment = $_POST['comment'];
-      $handle = fopen("comments.php", "w");
+      $handle = fopen("comments.php", "w+");
       fwrite($handle, "<b><i>" .$name. "</i></b>:<br>" .$comment. "<br><br>");
       fclose($handle);
     }
