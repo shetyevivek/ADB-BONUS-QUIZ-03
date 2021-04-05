@@ -83,7 +83,7 @@ if (isset($_POST['Submit']))
     <form action="" method="POST" style="margin-left:150px;">
       Name: <br><input type="text" name="name"><br><br>
       Comment: <br><textarea rows="10" cols="30" name="comment"></textarea><br>
-      <input type="submit" name="postc" value="Post Comment" style="padding:10px;">
+      <input type="submit" name="postc" value="Post Comment" style="padding:5px;">
     </form><br><br>
     <hr><br><br>
     <h3 style="margin-left:150px;">Other comments:</h3><br><br>
