@@ -89,7 +89,10 @@ if (isset($_POST['Submit']))
     <h3 style="margin-left:150px;">Other comments:</h3><br><br>
 
     <?php
+
+    echo "<p style='margin-left:150px;'>";
     include "comments.php";
+    echo "</p>";
     ?>
 
     <!-- GSAP -->
