@@ -71,9 +71,9 @@ if (isset($_POST['Submit']))
     <?php
     if(isset($_POST['postc']))
     {
-      $name = $_POST['name'];
+      $name = $_POST['name']. ":";
       $comment = $_POST['comment'];
-      $handle = fopen("comments.php", "w+");
+      $handle = fopen("comments.php", "a");
       fwrite($handle, "<b><i>" .$name. "</i></b><br>" .$comment. "<br><br>");
       fclose($handle);
     }
