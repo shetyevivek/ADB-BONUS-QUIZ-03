@@ -86,7 +86,7 @@ if (isset($_POST['Submit']))
       <input type="submit" name="postc" value="Post Comment">
     </form><br><br>
     <hr>
-    <h1 style="margin-left:150px;">Other comments:</h1>
+    <h3 style="margin-left:150px;">Other comments:</h3>
 
     <?php
     include "comments.php";
