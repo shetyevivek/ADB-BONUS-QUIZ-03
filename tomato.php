@@ -79,14 +79,14 @@ if (isset($_POST['Submit']))
     }
     ?>
 
-    <h3>Post a comment</h3><br>
-    <form action="" method="POST">
+    <h3 style="margin-left:150px;">Post a comment</h3><br>
+    <form action="" method="POST" style="margin-left:150px;">
       Name : <br><input type="text" name="name"><br>
       Comment: <br><textarea rows="10" cols="30" name="comment"></textarea><br>
       <input type="submit" name="postc" value="Post Comment">
     </form>
     <hr>
-    <h1>Other comments:</h1>
+    <h1 style="margin-left:150px;">Other comments:</h1>
 
     <?php
     include "comments.php";
