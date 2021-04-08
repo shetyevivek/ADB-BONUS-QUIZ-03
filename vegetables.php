@@ -44,7 +44,7 @@ while ($row = mysqli_fetch_array($result))
   echo "<img src='$plocation'>";
   echo "<div class='text' style='text-align:center;'>";
   echo "<h1><a href='details.php?name=$name'>$name</a></h1>";
-  echo "<p class='price'>$.$price</p>";
+  echo "<p class='price'>$$price.00</p>";
   echo "</div></article>";
 }
 
