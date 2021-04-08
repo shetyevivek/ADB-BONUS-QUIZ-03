@@ -87,7 +87,7 @@ if(isset($_POST['comments']))
   $sql5 = "INSERT INTO comments_table VALUES ('$naam','$comment','$name')";
   $result5 = mysqli_query($con, $sql5) or die('Error ' . mysqli_error($con));
 
-  $sql6 = "SELECT * FROM comments_table WHERE Name='$name'";
+  $sql6 = "SELECT * FROM comments_table WHERE Product_Name='$name'";
   $result6 = mysqli_query($con, $sql6) or die('Error ' . mysqli_error($con));
 
   while($rows = mysqli_fetch_array($result6))
