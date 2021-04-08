@@ -76,9 +76,7 @@ body {
 }
 
 .cards {
-  float: left;
   display: flex;
-  flex-wrap: wrap;
   align-items: stretch;
 }
 
