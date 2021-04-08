@@ -39,7 +39,7 @@ while ($row = mysqli_fetch_array($result))
   $plocation = $row['Photo_Location'];
 
   echo "<div class='column'><div class='card'>";
-  echo "<img src='$plocation' style='width:100%; height:350px;'>";
+  echo "<img src='$plocation' style='height:350px;'>";
   echo "<h1><a href='details.php?name=$name'>$name</a></h1>";
   echo "<p class='price'>$price</p>";
 }
