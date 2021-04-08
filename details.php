@@ -84,10 +84,10 @@ if(isset($_POST['comments']))
   $naam = $_POST['naam'];
   $comment = $_POST['comment'];
 
-  $sql5 = "INSERT INTO comments_table VALUES ('$naam','$comment','$category')";
+  $sql5 = "INSERT INTO comments_table VALUES ('$naam','$comment','$name')";
   $result5 = mysqli_query($con, $sql5) or die('Error ' . mysqli_error($con));
 
-  $sql6 = "SELECT * FROM comments_table WHERE Name='$naam'";
+  $sql6 = "SELECT * FROM comments_table WHERE Name='$name'";
   $result6 = mysqli_query($con, $sql6) or die('Error ' . mysqli_error($con));
 
   while($rows = mysqli_fetch_array($result6))
