@@ -54,7 +54,7 @@ echo "<p>Price: $$price.00</p><br>";
 echo "<p>Description: $description</p><br><br>";
 echo "<form action='' method='POST'>";
 echo "Quantity: ";
-echo "<input type='number' name='quantity' min='1' placeholder='1' style='width:25px;'><br><br>";
+echo "<input type='number' name='qty' min='1' placeholder='1' style='width:25px;'><br><br>";
 echo "<input type='submit' name='Submit' value='Add to cart' class='buttons' onclick='myFunction()'>";
 echo "</form";
 echo "</div></article>";
@@ -64,6 +64,10 @@ echo "</div>";
 //If Submit button is clicked
 if(isset($_POST['Submit']))
 {
+	$qty = $_POST['qty'];
+
+	echo $qty;
+
   $sql2 = "INSERT INTO cart VALUES ('$name', $price, '$plocation', 1)";
   $result2 = mysqli_query($con, $sql2) or die('Error ' . mysqli_error($con));
 
