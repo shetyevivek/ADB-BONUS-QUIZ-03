@@ -3,6 +3,8 @@
    session_start();
    $_SESSION['superhero'] = "batman";
 
-?>
+   $name = "Vivek";
 
-<a href="page2.php" title="">Go to the other page</a>
+   echo "<a href='page2.php?name=$name>Go to the other page</a>";
+
+?>
