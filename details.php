@@ -42,7 +42,7 @@ echo "<div class='cards'>";
 $row = mysqli_fetch_array($result);
 
 $name = $row['Name'];
-$price = $row['BPrice'];
+$price = $row['Price'];
 $plocation = $row['Photo_Location'];
 $description = $row['Description'];
 
