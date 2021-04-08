@@ -23,8 +23,6 @@
     <button type="submit"><i class="fa fa-search"></i></button>
   </form>
 
-  <input type="text" placeholder="Search..">
-
   <a href="cart.php"><i class="fa fa-shopping-cart" style="font-size:20px; color:#f2f2f2;"></i></a>
 </div>
 
