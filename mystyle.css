@@ -76,8 +76,10 @@ body {
 }
 
 .cards {
+  width: 20%;
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .card {
