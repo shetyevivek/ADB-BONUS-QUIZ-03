@@ -32,19 +32,23 @@ include_once "connection.php";
 $sql = "SELECT * FROM grocery WHERE Category = 'Vegetables'";
 $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
+echo "<div class='cards'>";
+
 while ($row = mysqli_fetch_array($result))
 {
   $name = $row['Name'];
   $price = $row['Price'];
   $plocation = $row['Photo_Location'];
 
-  echo "<div class='cards'><article class='card'>";
+  echo "<article class='card'>";
   echo "<img src='$plocation'>";
   echo "<div class='text'>";
   echo "<h1><a href='details.php?name=$name'>$name</a></h1>";
   echo "<p class='price'>$price</p>";
-  echo "</div></article></div>";
+  echo "</div></article>";
 }
+
+echo "</div>"
 
 ?>
 
