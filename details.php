@@ -50,7 +50,7 @@ while ($row = mysqli_fetch_array($result))
   echo "<img src='$plocation'>";
   echo "<div class='text'>";
   echo "<h1>Name: $name</h1>";
-  echo "<p>Price: $$price.00</p><br><br>";
+  echo "<p>Price: $$price.00</p><br>";
   echo "<p>Description: $description</p><br><br>";
   echo "<button>Add to cart</button>";
   echo "</div></article>";
