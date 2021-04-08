@@ -13,17 +13,15 @@
 <body>
 
 <div class="topnav">
-  <a class="active" href="index.php">Home</a>
-  <a href="vegetables.php">Vegetables</a>
-  <a href="fruits.php">Fruits</a>
-  <a href="condiments.php">Condiments</a>
-
-  <form action="/cart.php">
-    <input type="text" placeholder="Search.." name="search">
-    <button type="submit"><i class="fa fa-search"></i></button>
-  </form>
-
-  <a href="cart.php"><i class="fa fa-shopping-cart" style="font-size:20px; color:#f2f2f2;"></i></a>
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </div>
 
 </body>
