@@ -6,10 +6,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="mystyle.css">
-<!-- Favicon -->
-<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-<!-- Box icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <title>Grocery Shopping</title>
 </head>
@@ -20,7 +17,7 @@
   <a href="vegetables.php">Vegetables</a>
   <a href="fruits.php">Fruits</a>
   <a href="condiments.php">Condiments</a>
-  <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
+  <a href="cart.php"><i class="fa fa-shopping-cart" style="font-size:48px;color:white"></i></a>
 </div>
 
 </body>
