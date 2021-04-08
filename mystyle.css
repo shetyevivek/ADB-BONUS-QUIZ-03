@@ -76,13 +76,13 @@ body {
 }
 
 .cards {
+  float: left;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
 }
 
 .card {
-  float: left;
   flex: 0 0 300px;
   margin: 10px;
   border: 1px solid #ccc;
