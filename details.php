@@ -65,15 +65,14 @@ echo "</div>";
 if(isset($_POST['Submit']))
 {
 	$qty = $_POST['qty'];
+	$fprice = ($qty * $price);
 
-	echo $qty;
-
-  $sql2 = "INSERT INTO cart VALUES ('$name', $price, '$plocation', 1)";
+  $sql2 = "INSERT INTO cart VALUES ('$name', $fprice, '$plocation', $qty)";
   $result2 = mysqli_query($con, $sql2) or die('Error ' . mysqli_error($con));
 
   if(mysqli_affected_rows($con) > 0)
   {
-    echo "<script>alert('$name added to cart!')</script>";
+    echo "<script>alert('$qty x $name added to cart!')</script>";
   }
 }
 
