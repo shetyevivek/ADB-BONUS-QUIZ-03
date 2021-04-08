@@ -81,7 +81,7 @@ body {
 
 .card {
   flex: 0 0 97%;
-  height: 750px;
+  height: 700px;
   margin: 10px;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
