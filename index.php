@@ -4,7 +4,7 @@ if($_POST)
 {
 	$name = $_POST['name'];
 	$comment = $_POST['comment'];
-	$handle = fopen("Vivek.txt", "a");
+	$handle = fopen("Vivek.txt", "w+");
 	fwrite($handle, "<b><i>" .$name. "</i></b>:<br>" .$comment. "<br><br>");
 	fclose($handle);
 }
@@ -28,7 +28,7 @@ if($_POST)
 	<h1>Other comments:</h1><br>
 	<?php
 	$name = "Vivek";
-	include 'Vivek.txt';
+	include '$name.txt';
 	?>
 </body>
 </html>
