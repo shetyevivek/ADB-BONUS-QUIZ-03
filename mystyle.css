@@ -33,7 +33,6 @@ body {
 }
 
 .topnav .search-container {
-  float: left;
 }
 
 .topnav input[type=text] {
@@ -44,7 +43,6 @@ body {
 }
 
 .topnav .search-container button {
-  float: left;
   padding: 6px;
   margin-top: 8px;
   margin-right: 16px;
