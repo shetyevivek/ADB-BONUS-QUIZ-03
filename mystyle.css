@@ -1,9 +1,6 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.bg {
   background: url('Grocery.jpg') no-repeat center fixed;
   background-size: cover;
 }
