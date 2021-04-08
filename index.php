@@ -5,6 +5,6 @@
 
    $name = "Vivek";
 
-   echo "<a href='page2.php?name=$name>Go to the other page</a>";
+   echo "<a href='page2.php?name=$name'>Go to the other page</a>";
 
 ?>
