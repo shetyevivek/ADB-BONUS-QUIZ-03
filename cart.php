@@ -40,7 +40,7 @@
 	<?php
       include_once "connection.php";
 
-      $sql = "SELECT Name, Price, SUM(Price) AS Subtotal, Photo_Location, SUM(Quantity) AS Quantity FROM cart GROUP BY Name ORDER BY Name ASC";
+      $sql = "SELECT Name, BPrice, SUM(FPrice) AS Subtotal, Photo_Location, SUM(Quantity) AS Quantity FROM cart GROUP BY Name ORDER BY Name ASC";
       $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
       while ($row = mysqli_fetch_array($result))
@@ -48,7 +48,7 @@
         $name = $row['Name'];
         $image = $row['Photo_Location'];
         $quantity = $row['Quantity'];
-        $price = $row['Price'];
+        $price = $row['BPrice'];
         $subtotal = $row['Subtotal'];
 
         echo "<div class='basket-product'>";
@@ -82,7 +82,7 @@
 					<?php
 					include_once "connection.php";
 
-					$sql = "SELECT SUM(Price) AS Total FROM cart";
+					$sql = "SELECT SUM(FPrice) AS Total FROM cart";
 					$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
 					$row = mysqli_fetch_array($result);
@@ -102,7 +102,7 @@
 					<?php
 					include_once "connection.php";
 
-					$sql = "SELECT SUM(Price) AS Total FROM cart";
+					$sql = "SELECT SUM(FPrice) AS Total FROM cart";
 					$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
 					$row = mysqli_fetch_array($result);

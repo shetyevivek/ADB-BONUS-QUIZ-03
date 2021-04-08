@@ -42,7 +42,7 @@ echo "<div class='cards'>";
 $row = mysqli_fetch_array($result);
 
 $name = $row['Name'];
-$price = $row['Price'];
+$price = $row['BPrice'];
 $plocation = $row['Photo_Location'];
 $description = $row['Description'];
 
@@ -67,7 +67,7 @@ if(isset($_POST['Submit']))
 	$qty = $_POST['qty'];
 	$fprice = ($qty * $price);
 
-  $sql2 = "INSERT INTO cart VALUES ('$name', $fprice, '$plocation', $qty)";
+  $sql2 = "INSERT INTO cart VALUES ('$name', $price, $fprice, '$plocation', $qty)";
   $result2 = mysqli_query($con, $sql2) or die('Error ' . mysqli_error($con));
 
   if(mysqli_affected_rows($con) > 0)
