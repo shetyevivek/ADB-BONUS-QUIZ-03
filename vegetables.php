@@ -25,7 +25,7 @@
     </form>
   </div>
   <a href="cart.php" style="float:right;"><i class="fa fa-shopping-cart" style="font-size:19.5px;color:white"></i></a>
-</div>
+</div><br><br>
 
 <!-- Cards -->
 <div class="column">
