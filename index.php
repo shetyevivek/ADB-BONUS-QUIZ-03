@@ -29,7 +29,7 @@ if($_POST)
 	<h1>Other comments:</h1><br>
 	<?php
 	$names = "Vivek";
-	include '$names.txt';
+	include 'Vivek.txt';
 	?>
 </body>
 </html>
