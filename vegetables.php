@@ -38,7 +38,7 @@ while ($row = mysqli_fetch_array($result))
   $price = $row['Price'];
   $plocation = $row['Photo_Location'];
 
-  echo "<div class='cards'><div class='card'>";
+  echo "<div class='cards'><article class='card'>";
   echo "<img src='$plocation'>";
   echo "<div class='text'>";
   echo "<h1><a href='details.php?name=$name'>$name</a></h1>";
