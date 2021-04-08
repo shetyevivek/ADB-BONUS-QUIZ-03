@@ -87,14 +87,14 @@ if(isset($_POST['comments']))
   $sql5 = "INSERT INTO comments_table VALUES ('$naam','$comment','$category')";
   $result5 = mysqli_query($con, $sql5) or die('Error ' . mysqli_error($con));
 
-  $sql6 = "SELECT * FROM comments_table VALUES Name='$naam'";
+  $sql6 = "SELECT * FROM comments_table WHERE Name='$naam'";
   $result6 = mysqli_query($con, $sql6) or die('Error ' . mysqli_error($con));
 
   while($rows = mysqli_fetch_array($result6))
   {
     echo "<div style='margin-left:20px;'>";
-    echo "<b><i>" .$naam. ":</i></b><br>";
-    echo $comment. "<br><br><br>";
+    echo "<b><i>" .$rows['Name']. ":</i></b><br>";
+    echo $rows['Comments']. "<br><br><br>";
     echo "</div>";
   }
 }
