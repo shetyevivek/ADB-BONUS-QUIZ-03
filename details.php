@@ -44,7 +44,7 @@ while ($row = mysqli_fetch_array($result))
   $name = $row['Name'];
   $price = $row['Price'];
   $plocation = $row['Photo_Location'];
-  $description = $_row['Description'];
+  $description = $row['Description'];
 
   echo "<article class='card'>";
   echo "<img src='$plocation'>";
