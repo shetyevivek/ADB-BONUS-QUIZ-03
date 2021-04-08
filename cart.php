@@ -10,7 +10,6 @@
 
 <body>
 	<main>
-		<a href="index.php" style="font-size:20px; color:#000;">Home</a>
 		<h2>Shopping Cart</h2>
 		<div class="basket">
 			<div class="basket-labels">
