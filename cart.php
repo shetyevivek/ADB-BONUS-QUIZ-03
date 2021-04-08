@@ -124,7 +124,7 @@
 	</main>
 
 	<form action="" method="post">
-		<input type="submit" name="empty" value="Empty Cart" style="margin-left:300px; background:gray;; color:#fff; cursor:pointer; border:0px; padding:10px;">
+		<input type="submit" class="emptybtn" name="empty" value="Empty Cart" style="margin-left:300px; background:gray;; color:#fff; cursor:pointer; border:0px; padding:10px;">
 	</form><br><br><br>
 
 	<?php
@@ -179,6 +179,7 @@
 				$('#basket-subtotal').html(subtotal.toFixed(2));
 				$('#basket-total').html(total.toFixed(2));
 				if(total == 0) {
+					$('.emptybtn').fadeOut(fadeTime);
 					$('.checkout-cta').fadeOut(fadeTime);
 				} else {
 					$('.checkout-cta').fadeIn(fadeTime);
