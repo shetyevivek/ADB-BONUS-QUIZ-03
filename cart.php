@@ -91,7 +91,9 @@
 					if($totalprice == NULL)
 					{
 						$totalprice = 0;
-						echo "<script>$('.emptybtn').fadeOut(fadeTime);
+
+						echo "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>";
+						echo "<script type='text/javascript'>$('.emptybtn').fadeOut(fadeTime);
 						$('.checkout-cta').fadeOut(fadeTime);</script>";
 					}
 
@@ -113,7 +115,9 @@
 					if($totalprice == NULL)
 					{
 						$totalprice = 0;
-						echo "<script>$('.emptybtn').fadeOut(fadeTime);
+
+						echo "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>";
+						echo "<script type='text/javascript'>$('.emptybtn').fadeOut(fadeTime);
 						$('.checkout-cta').fadeOut(fadeTime);</script>";
 					}
 
