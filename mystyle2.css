@@ -80,7 +80,7 @@ body {
 }
 
 .card {
-  flex: 0 0 350px;
+  flex: 0 0 750px;
   height: 450px;
   margin: 10px;
   border: 1px solid #ccc;
