@@ -40,7 +40,7 @@
 	<?php
       include_once "connection.php";
 
-      $sql = "SELECT * FROM cart";
+      $sql = "SELECT Name, SUM(Price) AS Price, Photo_Location, SUM(Quantity) AS Quantity FROM cart GROUP BY Name";
       $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
       while ($row = mysqli_fetch_array($result))
@@ -81,7 +81,7 @@
 					<?php
 					include_once "connection.php";
 
-					$sql = "SELECT SUM(Price) AS Total FROM cart";
+					$sql = "SELECT SUM(Price) AS Total FROM cart GROUP BY Name";
 					$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
 					$row = mysqli_fetch_array($result);
@@ -101,7 +101,7 @@
 					<?php
 					include_once "connection.php";
 
-					$sql = "SELECT SUM(Price) AS Total FROM cart";
+					$sql = "SELECT SUM(Price) AS Total FROM cart GROUP BY Name";
 					$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
 					$row = mysqli_fetch_array($result);
