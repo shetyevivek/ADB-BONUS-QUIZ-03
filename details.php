@@ -39,7 +39,7 @@ $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
 echo "<div class='cards'>";
 
-$row = mysqli_fetch_array($result)
+$row = mysqli_fetch_array($result);
 
 $name = $row['Name'];
 $price = $row['Price'];
