@@ -1,6 +1,3 @@
-<?php
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -86,17 +83,6 @@ if(isset($_POST['comments']))
 
   $sql5 = "INSERT INTO comments_table VALUES ('$naam','$comment','$name')";
   $result5 = mysqli_query($con, $sql5) or die('Error ' . mysqli_error($con));
-
-  $sql6 = "SELECT * FROM comments_table WHERE Product_Name='$name'";
-  $result6 = mysqli_query($con, $sql6) or die('Error ' . mysqli_error($con));
-
-  while($rows = mysqli_fetch_array($result6))
-  {
-    echo "<div style='margin-left:20px;'>";
-    echo "<b><i>" .$rows['Name']. ":</i></b><br>";
-    echo $rows['Comments']. "<br><br><br>";
-    echo "</div>";
-  }
 }
 
 ?>
@@ -109,6 +95,21 @@ if(isset($_POST['comments']))
   </form>
   <hr>
   <h1 style="margin-left:20px;">Other comments:</h1><br>
+  
+  <?php
+  include_once "connection.php";
+
+  $sql6 = "SELECT * FROM comments_table WHERE Product_Name='$name'";
+  $result6 = mysqli_query($con, $sql6) or die('Error ' . mysqli_error($con));
+
+  while($rows = mysqli_fetch_array($result6))
+  {
+    echo "<div style='margin-left:20px;'>";
+    echo "<b><i>" .$rows['Name']. ":</i></b><br>";
+    echo $rows['Comments']. "<br><br><br>";
+    echo "</div>";
+  }
+  ?>
 
 </body>
 </html>
