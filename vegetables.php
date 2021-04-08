@@ -16,7 +16,7 @@
   <a href="fruits.php">Fruits</a>
   <a href="condiments.php">Condiments</a>
   <div class="search-container">
-    <form action="/action_page.php">
+    <form action="search.php" method="POST">
       <input type="text" placeholder="Search.." name="search">
       <button type="submit">Submit</button>
     </form>
