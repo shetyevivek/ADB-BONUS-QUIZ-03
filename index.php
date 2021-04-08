@@ -19,9 +19,9 @@
   <a href="fruits.php">Fruits</a>
   <a href="condiments.php">Condiments</a>
   <div class="search-container">
-    <form action="/action_page.php">
+    <form action="search.php" method="POST">
       <input type="text" placeholder="Search.." name="search">
-      <button type="submit">Submit</button>
+      <button type="submit" name="Submit">Submit</button>
     </form>
   </div>
   <a href="cart.php" style="float:right;"><i class="fa fa-shopping-cart" style="font-size:19.5px;color:white"></i></a>
