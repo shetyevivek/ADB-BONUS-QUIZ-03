@@ -5,7 +5,7 @@ if($_POST)
 	$name = $_POST['name'];
 	$comment = $_POST['comment'];
 	$filename = "Vivek";
-	$handle = fopen('$filename.txt', 'a');
+	$handle = fopen('Vivek.txt', 'w+');
 	fwrite($handle, "<b><i>" .$name. "</i></b>:<br>" .$comment. "<br><br>");
 	fclose($handle);
 }
