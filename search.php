@@ -30,6 +30,8 @@ include_once "connection.php";
 
 $word = $_POST['search'];
 
+echo $word;
+
 // Retrieve the data
 $sql = "SELECT * FROM grocery WHERE Name IN ('$word%','%$word','%$word%') OR Description IN ('$word%','%$word','%$word%')";
 $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
