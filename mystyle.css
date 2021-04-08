@@ -1,3 +1,5 @@
+* {box-sizing: border-box;}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -73,7 +75,7 @@ body {
   }
 }
 
-.column {
+.cards {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -86,11 +88,10 @@ body {
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
 }
 
-.price {
-  color: grey;
-  font-size: 20px;
+.card img {
+  max-width: 100%;
 }
 
-.card img {
-    max-width: 100%;
+.card .text {
+  padding: 0 20px 20px;
 }
