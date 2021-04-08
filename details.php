@@ -53,7 +53,8 @@ echo "<h1>Name: $name</h1>";
 echo "<p>Price: $$price.00</p><br>";
 echo "<p>Description: $description</p><br><br>";
 echo "<form action='' method='POST'>";
-echo "<input type='submit' name='Submit' value='Add to cart' class='buttons' onclick='myFunction()'>";
+echo "<input type='submit' name='Submit' value='Add to cart' class='buttons popup' onclick='myFunction()'>";
+echo "<span class='popuptext' id='myPopup'>$name added to cart!</span>";
 echo "</form";
 echo "</div></article>";
 
@@ -67,7 +68,12 @@ if(isset($_POST['Submit']))
 
   if(mysqli_affected_rows($con) > 0)
   {
-    echo "<script>alert('$name added to cart!')</script>";
+    echo "<script>
+    function myFunction() {
+      var popup = document.getElementById('myPopup');
+      popup.classList.toggle('show');
+    }
+    </script>";
   }
 }
 
