@@ -31,7 +31,7 @@
       while ($row = mysqli_fetch_array($result))
       {
         $name = $row['Name'];
-        $image = $row['Image_Location'];
+        $image = $row['Photo_Location'];
         $quantity = $row['Quantity'];
         $price = $row['Price'];
 
