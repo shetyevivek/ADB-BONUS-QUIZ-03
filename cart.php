@@ -125,7 +125,7 @@
 
 	<form action="" method="post">
 		<input type="submit" name="empty" value="Empty Cart" style="margin-left:300px; background:gray;; color:#fff; cursor:pointer; border:0px; padding:10px;">
-	</form>
+	</form><br><br>
 
 	<?php
 	include_once "connection.php";
