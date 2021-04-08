@@ -60,11 +60,11 @@
         echo "<h1><strong><span class='item-quantity'>$quantity</span> x $name</strong></h1>";
         echo "</div>";
         echo "</div>";
-        echo "<div class='price'>$price</div>";
+        echo "<div class='price'>$price.00</div>";
         echo "<div class='quantity'>";
         echo "<input type='number' value='$quantity' min='1' class='quantity-field'>";
         echo "</div>";
-        echo "<div class='subtotal'>$subtotal</div>";
+        echo "<div class='subtotal'>$subtotal.00</div>";
         echo "<div class='remove'>";
         echo "<button>Remove</button>";
         echo "</div>";
