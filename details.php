@@ -101,7 +101,7 @@ if(isset($_POST['comments']))
     <input type="submit" name="comments" value="Post Comment">
   </form>
   <hr>
-  <h1 style="margin-left:20px;>Other comments:</h1><br>
+  <h1 style="margin-left:20px;">Other comments:</h1><br>
   <?php
   $fname = $_GET['name'];
 
