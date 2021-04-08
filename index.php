@@ -16,5 +16,8 @@
   <a href="condiments.php">Condiments</a>
 </div>
 
+<div class="bg">
+</div>
+
 </body>
 </html>
