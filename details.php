@@ -53,6 +53,7 @@ echo "<h1>Name: $name</h1>";
 echo "<p>Price: $$price.00</p><br>";
 echo "<p>Description: $description</p><br><br>";
 echo "<form action='' method='POST'>";
+echo "<input type='number' name='quantity' min='1'>";
 echo "<input type='submit' name='Submit' value='Add to cart' class='buttons' onclick='myFunction()'>";
 echo "</form";
 echo "</div></article>";
