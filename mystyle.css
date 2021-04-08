@@ -33,7 +33,7 @@ body {
 }
 
 .topnav .search-container {
-  float: right;
+  float: left;
 }
 
 .topnav input[type=text] {
