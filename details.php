@@ -78,7 +78,7 @@ if(isset($_POST['Submit']))
 
 ?>
 
-<b><br><b>
+<b><br><b><b><b>
 
 <?php
 
@@ -94,17 +94,20 @@ if(isset($_POST['comments']))
 
 ?>
 
-<h1>Post a comment</h1>
-  <form action="" method="POST">
+<h1 style="margin-left:20px;">Post a comment</h1>
+  <form action="" method="POST" style="margin-left:20px;">
     Name : <br><input type="text" name="naam"><br>
     Comment: <br><textarea rows="10" cols="30" name="comment"></textarea><br>
     <input type="submit" name="comments" value="Post Comment">
   </form>
   <hr>
-  <h1>Other comments:</h1><br>
+  <h1 style="margin-left:20px;>Other comments:</h1><br>
   <?php
   $fname = $_GET['name'];
+
+  echo "<div style='margin-left:20px;'>";
   include '$fname.txt';
+  echo "</div>";
   ?>
 
 </body>
