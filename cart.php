@@ -40,7 +40,7 @@
 	<?php
       include_once "connection.php";
 
-      $sql = "SELECT Name, Price AS Price, Photo_Location, SUM(Quantity) AS Quantity FROM cart GROUP BY Name ORDER BY Name ASC";
+      $sql = "SELECT Name, Price, SUM(Price) AS Subtotal Photo_Location, SUM(Quantity) AS Quantity FROM cart GROUP BY Name ORDER BY Name ASC";
       $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
       while ($row = mysqli_fetch_array($result))
@@ -49,6 +49,7 @@
         $image = $row['Photo_Location'];
         $quantity = $row['Quantity'];
         $price = $row['Price'];
+        $subtotal = $row['Subtotal'];
 
         echo "<div class='basket-product'>";
         echo "<div class='item'>";
@@ -63,7 +64,7 @@
         echo "<div class='quantity'>";
         echo "<input type='number' value='$quantity' min='1' class='quantity-field'>";
         echo "</div>";
-        echo "<div class='subtotal'>$price</div>";
+        echo "<div class='subtotal'>$subtotal</div>";
         echo "<div class='remove'>";
         echo "<button>Remove</button>";
         echo "</div>";
