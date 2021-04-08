@@ -31,7 +31,7 @@
 <div class="column">
   <div class="card">
     <img src="/Vegetables/Cauliflower.jpg" style="width:100%; height:350px;">
-    <h1>Cauliflower - 2 lb</h1>
+    <h1><a href="#">Cauliflower - 2 lb</a></h1>
     <p class="price">$19.99</p>
   </div>
 </div>
