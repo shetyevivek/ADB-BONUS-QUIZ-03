@@ -28,8 +28,8 @@ if($_POST)
 	<hr>
 	<h1>Other comments:</h1><br>
 	<?php
-	$name = "Vivek";
-	include '$name.txt';
+	$names = "Vivek";
+	include '$names.txt';
 	?>
 </body>
 </html>
