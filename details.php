@@ -106,7 +106,7 @@ if(isset($_POST['comments']))
   {
     echo "<div style='margin-left:20px;'>";
     echo "<b><i>" .$rows['Name']. ":</i></b><br>";
-    echo $rows['Comments']. "<br><br>";
+    echo $rows['Comments']. "<br>";
     echo "</div>";
   }
   ?>
