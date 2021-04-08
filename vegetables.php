@@ -42,7 +42,7 @@ while ($row = mysqli_fetch_array($result))
 
   echo "<article class='card'>";
   echo "<img src='$plocation'>";
-  echo "<div class='text'>";
+  echo "<div class='text' style='text-align:center;'>";
   echo "<h1><a href='details.php?name=$name'>$name</a></h1>";
   echo "<p class='price'>$price</p>";
   echo "</div></article>";
