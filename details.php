@@ -53,7 +53,7 @@ while ($row = mysqli_fetch_array($result))
   echo "<p>Price: $$price.00</p><br>";
   echo "<p>Description: $description</p><br><br>";
   echo "<form action='' method='POST'>";
-  echo "<input type='submit' value='Add to cart' class='button'>";
+  echo "<input type='submit' value='Add to cart' class='buttons'>";
   echo "</form";
   echo "</div></article>";
 }

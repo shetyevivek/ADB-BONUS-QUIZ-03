@@ -96,7 +96,7 @@ body {
   padding: 0 20px 20px;
 }
 
-.card .text > button {
+.card .text .buttons {
   background: gray;
   border: 0;
   color: white;
