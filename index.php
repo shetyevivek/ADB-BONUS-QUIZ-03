@@ -17,7 +17,7 @@
   <a href="vegetables.php">Vegetables</a>
   <a href="fruits.php">Fruits</a>
   <a href="condiments.php">Condiments</a>
-  <a href="cart.php"><i class="fa fa-shopping-cart" style="font-size:20px; color:white; float:right;"></i></a>
+  <a href="cart.php"><i class="fa fa-shopping-cart" style="font-size:20px; color:#f2f2f2; float:right;"></i></a>
 </div>
 
 </body>
