@@ -28,7 +28,7 @@ if($_POST)
 	<h1>Other comments:</h1><br>
 	<?php
 	$name = "Vivek";
-	include '$name.txt';
+	include 'Vivek.txt';
 	?>
 </body>
 </html>
