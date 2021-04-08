@@ -18,7 +18,7 @@
   <a href="fruits.php">Fruits</a>
   <a href="condiments.php">Condiments</a>
 
-  <form action="/cart.php" style="margin:auto;max-width:300px">
+  <form action="/cart.php">
     <input type="text" placeholder="Search.." name="search">
     <button type="submit"><i class="fa fa-search"></i></button>
   </form>
