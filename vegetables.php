@@ -30,7 +30,7 @@
 <!-- Cards -->
 <div class="column">
   <div class="card">
-    <img src="/Vegetables/Cauliflower.jpg" style="width:100%;">
+    <img src="/Vegetables/Cauliflower.jpg" style="width:100%; height:300px;">
     <h1>Cauliflower</h1>
     <p class="price">$19.99</p>
   </div>
