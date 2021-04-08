@@ -27,5 +27,14 @@
   <a href="cart.php" style="float:right;"><i class="fa fa-shopping-cart" style="font-size:19.5px;color:white"></i></a>
 </div>
 
+<!-- Cards -->
+<div class="column">
+  <div class="card">
+    <img src="/Vegetables/Cauliflower.jpg" style="width:100%; height:100%;">
+    <h1>Cauliflower</h1>
+    <p class="price">$19.99</p>
+  </div>
+</div>
+
 </body>
 </html>
