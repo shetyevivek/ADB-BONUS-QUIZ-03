@@ -81,7 +81,7 @@
 					<?php
 					include_once "connection.php";
 
-					$sql = "SELECT SUM(Price) AS Total FROM cart GROUP BY Name ORDER BY Name ASC";
+					$sql = "SELECT SUM(Price) AS Total FROM cart";
 					$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
 					$row = mysqli_fetch_array($result);
@@ -101,7 +101,7 @@
 					<?php
 					include_once "connection.php";
 
-					$sql = "SELECT SUM(Price) AS Total FROM cart GROUP BY Name ORDER BY Name ASC";
+					$sql = "SELECT SUM(Price) AS Total FROM cart";
 					$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
 					$row = mysqli_fetch_array($result);
