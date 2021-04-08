@@ -91,11 +91,6 @@
 					if($totalprice == NULL)
 					{
 						$totalprice = 0;
-
-						echo "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>";
-						echo "<script type='text/javascript'>var fadeTime = 300;
-						$('.emptybtn').fadeOut(fadeTime);
-						$('.checkout-cta').fadeOut(fadeTime);</script>";
 					}
 
 					echo "<div class='subtotal-value final-value' id='basket-subtotal'>$totalprice</div>";
@@ -116,11 +111,6 @@
 					if($totalprice == NULL)
 					{
 						$totalprice = 0;
-
-						echo "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>";
-						echo "<script type='text/javascript'>var fadeTime = 300;
-						$('.emptybtn').fadeOut(fadeTime);
-						$('.checkout-cta').fadeOut(fadeTime);</script>";
 					}
 
 					echo "<div class='total-value final-value' id='basket-total'>$totalprice</div>";
