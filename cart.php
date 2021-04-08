@@ -91,6 +91,8 @@
 					if($totalprice == NULL)
 					{
 						$totalprice = 0;
+						echo "<script>$('.emptybtn').fadeOut(fadeTime);
+						$('.checkout-cta').fadeOut(fadeTime);</script>";
 					}
 
 					echo "<div class='subtotal-value final-value' id='basket-subtotal'>$totalprice</div>";
