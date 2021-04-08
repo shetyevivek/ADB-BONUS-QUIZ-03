@@ -78,5 +78,34 @@ if(isset($_POST['Submit']))
 
 ?>
 
+<b><br><b>
+
+<?php
+
+if(isset($_POST['comments']))
+{
+  $naam = $_POST['naam'];
+  $comment = $_POST['comment'];
+  $filename = $_GET['name'];
+  $handle = fopen('$filename.txt', "a");
+  fwrite($handle, "<b><i>" .$naam. "</i></b>:<br>" .$comment. "<br><br>");
+  fclose($handle);
+}
+
+?>
+
+<h1>Post a comment</h1>
+  <form action="" method="POST">
+    Name : <br><input type="text" name="naam"><br>
+    Comment: <br><textarea rows="10" cols="30" name="comment"></textarea><br>
+    <input type="submit" name="comments" value="Post Comment">
+  </form>
+  <hr>
+  <h1>Other comments:</h1><br>
+  <?php
+  $fname = $_GET['name'];
+  include '$fname.txt';
+  ?>
+
 </body>
 </html>
