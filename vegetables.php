@@ -1,6 +1,3 @@
-<?php
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,6 +25,27 @@
 </div><br><br>
 
 <!-- Cards -->
+<?php
+include_once "connection.php";
+
+// Retrieve the data
+$sql = "SELECT * FROM grocery WHERE Category = 'Vegetables'";
+$result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
+
+while ($row = mysqli_fetch_array($result))
+{
+  $name = $row['Name'];
+  $price = $row['Price'];
+  $plocation = $row['Photo_Location'];
+
+  echo "<div class='column'><div class='card'>";
+  echo "<img src='$plocation' style='width:100%; height:350px;'>";
+  echo "<h1><a href='details.php?name=$name'>$name</a></h1>";
+  echo "<p class='price'>$price</p>";
+}
+?>
+
+<!--
 <div class="column">
   <div class="card">
     <img src="/Vegetables/Cauliflower.jpg" style="width:100%; height:350px;">
@@ -35,6 +53,7 @@
     <p class="price">$19.99</p>
   </div>
 </div>
+-->
 
 </body>
 </html>
