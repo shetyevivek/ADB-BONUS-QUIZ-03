@@ -98,7 +98,7 @@ if(isset($_POST['comments']))
   <form action="" method="POST">
     <span style="margin-left:20px;">Name : </span><br><input type="text" name="naam" style="margin-left:20px;"><br>
     <span style="margin-left:20px;">Comment: </span><br><textarea rows="10" cols="30" name="comment" style="margin-left:20px;"></textarea><br>
-    <input type="submit" name="comments" value="Post Comment">
+    <input type="submit" name="comments" value="Post Comment" style="margin-left:20px;">
   </form>
   <hr>
   <h1 style="margin-left:20px;">Other comments:</h1><br>
