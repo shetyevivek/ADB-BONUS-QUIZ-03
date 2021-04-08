@@ -23,7 +23,7 @@
       <button type="submit">Submit</button>
     </form>
   </div>
-  <a href="cart.php" style="float:right;"><i class="fa fa-shopping-cart" style="font-size:19.5px;color:white"></i></a>
+  <a href="cart.php" style="float:right;"><i class="fas fa-shopping-cart" style="font-size:19.5px;color:white"></i></a>
 </div>
 
 </body>
