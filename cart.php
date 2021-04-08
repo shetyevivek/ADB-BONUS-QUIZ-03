@@ -40,7 +40,7 @@
 	<?php
       include_once "connection.php";
 
-      $sql = "SELECT Name, Price, SUM(Price) AS Subtotal Photo_Location, SUM(Quantity) AS Quantity FROM cart GROUP BY Name ORDER BY Name ASC";
+      $sql = "SELECT Name, Price, SUM(Price) AS Subtotal, Photo_Location, SUM(Quantity) AS Quantity FROM cart GROUP BY Name ORDER BY Name ASC";
       $result = mysqli_query($con, $sql) or die('Error ' . mysqli_error($con));
 
       while ($row = mysqli_fetch_array($result))
