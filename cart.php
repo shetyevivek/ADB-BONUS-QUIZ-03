@@ -124,7 +124,7 @@
 	</main>
 
 	<form action="" method="post">
-		<input type="submit" name="empty" value="Empty Cart" style="margin-left:300px; background:#ff7c9c; color:#fff; cursor:pointer; border:0px; padding:10px;">
+		<input type="submit" name="empty" value="Empty Cart" style="margin-left:300px; background:gray;; color:#fff; cursor:pointer; border:0px; padding:10px;">
 	</form>
 
 	<?php
